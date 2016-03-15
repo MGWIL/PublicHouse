@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PublicHouse</string>
+    <string name="initialPrice">0</string>
+    <string name="cost">Cost</string>
+    <string name="add">+</string>
+    <string name="initialZero">0</string>
+    <string name="minus">-</string>
+    <string name="quantity">Number Of Pints</string>
+</resources>
