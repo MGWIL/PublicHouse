@@ -67,5 +67,3 @@ public class ReViewAdapter extends RecyclerView.Adapter<ReViewAdapter.DrinkViewH
 
 
 }
-
-
