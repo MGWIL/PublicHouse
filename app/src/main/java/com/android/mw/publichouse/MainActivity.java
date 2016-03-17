@@ -1,7 +1,6 @@
 package com.android.mw.publichouse;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,13 +16,13 @@ public class MainActivity extends Activity {
     /**
      * This app displays an order form for drinks.
      */
-    private List<Drinks> drinks;
+    private List<Drink> drinks;
     private RecyclerView rv;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         rv=(RecyclerView)findViewById(R.id.rv);
@@ -38,14 +37,76 @@ public class MainActivity extends Activity {
 
     private void initializeData(){
         drinks = new ArrayList<>();
-        drinks.add(new Drinks("Emma Wilson", "23 years old", R.drawable.emma));
-        drinks.add(new Drinks("Lavery Maiss", "25 years old", R.drawable.lavery));
-        drinks.add(new Drinks("Lillie Watts", "35 years old", R.drawable.lillie));
+        drinks.add(new Drink("Guiness", "Dublin, Ireland", R.drawable.guinness));
+        drinks.add(new Drink("Amstel", "Amsterdam, Netherlands", R.drawable.amstel));
+        drinks.add(new Drink("Thatchers", "Somerset, England", R.drawable.cider));
+        drinks.add(new Drink("Heineken", "Zoeterwoude, Netherlands", R.drawable.heineken));
     }
 
     private void initializeAdapter(){
-        ReViewAdaptor adapter = new ReViewAdaptor(drinks);
+        ReViewAdapter adapter = new ReViewAdapter(drinks);
         rv.setAdapter(adapter);
+
     }
+
+    int quantity = (0);
+    double pintPrice = (1.9);
+
+
+    /**
+     * this method increases the drinks by one
+     */
+
+
+    public void increment(View view) {
+        quantity = (quantity + 1);
+        submitOrder(quantity);
+
+    }
+
+    /**
+     * this method decreases the drinks by one
+     */
+
+
+    public void decrement(View view) {
+        if (quantity > 0)
+        {
+            quantity = (quantity - 1);
+            submitOrder(quantity);
+        }
+        else
+        {
+            submitOrder(quantity);
+        }
+    }
+
+    /**
+     * This method is called to display updated total.
+     */
+    public void submitOrder(int quantity) {
+        display(quantity);
+        displayPrice(quantity * pintPrice);
+    }
+
+    /**
+     * This method displays the given quantity value on the screen.
+     */
+    private void display(int number)
+    {
+        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        quantityTextView.setText("" + number);
+    }
+
+    /**
+     * This Method Displayes the Total Cost of Order
+     */
+    private void displayPrice(double number)
+    {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+
+    }
+
 }
 

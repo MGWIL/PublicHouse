@@ -8,12 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.mw.publichouse.R;
+
 import java.util.List;
 
-/**
- * Created by mw on 3/16/16.
- */
-public class ReViewAdaptor extends RecyclerView.Adapter<ReViewAdaptor.DrinkViewHolder> {
+public class ReViewAdapter extends RecyclerView.Adapter<ReViewAdapter.DrinkViewHolder> {
 
     public static class DrinkViewHolder extends RecyclerView.ViewHolder {
 
@@ -31,10 +30,10 @@ public class ReViewAdaptor extends RecyclerView.Adapter<ReViewAdaptor.DrinkViewH
         }
     }
 
-    List<Drinks> drinks;
+    List<Drink> drinks;
 
-    ReViewAdaptor(List<Drinks> drinks){
-        this.drinks = drinks;
+    ReViewAdapter(List<Drink> persons){
+        this.drinks = persons;
     }
 
     @Override
@@ -44,20 +43,29 @@ public class ReViewAdaptor extends RecyclerView.Adapter<ReViewAdaptor.DrinkViewH
 
     @Override
     public DrinkViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_main, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, viewGroup, false);
         DrinkViewHolder dvh = new DrinkViewHolder(v);
         return dvh;
     }
 
     @Override
-    public void onBindViewHolder(DrinkViewHolder drinkViewHolder, int i) {
-        drinkViewHolder.drinkName.setText(drinks.get(i).name);
-        drinkViewHolder.drinkLocation.setText(drinks.get(i).location);
-        drinkViewHolder.drinkPhoto.setImageResource(drinks.get(i).photoId);
+    public void onBindViewHolder(DrinkViewHolder personViewHolder, int i) {
+        personViewHolder.drinkName.setText(drinks.get(i).name);
+        personViewHolder.drinkLocation.setText(drinks.get(i).location);
+        personViewHolder.drinkPhoto.setImageResource(drinks.get(i).photoId);
     }
+
+
 
     @Override
     public int getItemCount() {
         return drinks.size();
     }
+
+
+
+
+
 }
+
+
