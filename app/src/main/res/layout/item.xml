@@ -24,6 +24,7 @@
             android:maxHeight="100dp"
             android:scaleType="fitCenter"
             android:layout_marginStart="1dp"
+            android:contentDescription="@string/beer_logo"
             />
 
         <TextView
@@ -33,6 +34,7 @@
             android:layout_toEndOf="@+id/drink_photo"
             android:layout_alignParentTop="true"
             android:textSize="30sp"
+            android:layout_marginStart="4dp"
             />
 
         <TextView
@@ -41,6 +43,8 @@
             android:id="@+id/drink_location"
             android:layout_toEndOf="@+id/drink_photo"
             android:layout_below="@+id/drink_name"
+            android:layout_marginStart="4dp"
+
             />
 
     </RelativeLayout>

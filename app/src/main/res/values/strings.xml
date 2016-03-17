@@ -6,4 +6,5 @@
     <string name="initialZero">0</string>
     <string name="minus">-</string>
     <string name="quantity">Number Of Pints</string>
+    <string name="beer_logo">logo</string>
 </resources>

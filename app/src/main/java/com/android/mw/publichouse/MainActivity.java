@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
         drinks.add(new Drink("Amstel", "Amsterdam, Netherlands", R.drawable.amstel));
         drinks.add(new Drink("Thatchers", "Somerset, England", R.drawable.cider));
         drinks.add(new Drink("Heineken", "Zoeterwoude, Netherlands", R.drawable.heineken));
+        drinks.add(new Drink("Old Speckled Hen", "Oxfordshire, England", R.drawable.speckled_hen));
     }
 
     private void initializeAdapter(){
