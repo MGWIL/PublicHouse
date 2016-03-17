@@ -93,6 +93,10 @@ public class MainActivity extends Activity {
     /**
      * This method displays the given quantity value on the screen.
      */
+
+    /*
+    changes
+     */
     private void display(int number)
     {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
