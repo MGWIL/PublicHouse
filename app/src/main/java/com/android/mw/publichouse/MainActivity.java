@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -43,6 +42,13 @@ public class MainActivity extends Activity {
         drinks.add(new Drink("Thatchers", "Somerset, England", R.drawable.cider));
         drinks.add(new Drink("Heineken", "Zoeterwoude, Netherlands", R.drawable.heineken));
         drinks.add(new Drink("Old Speckled Hen", "Oxfordshire, England", R.drawable.speckled_hen));
+        drinks.add(new Drink("Doom Bar", "Cornwall, England", R.drawable.doombar));
+        drinks.add(new Drink("Stella Artois", "Leuven, Belgium", R.drawable.stella));
+        drinks.add(new Drink("Meantime Pale", "Greenwich, London", R.drawable.meantime));
+        drinks.add(new Drink("staropramen", "Prague, Czech Republic", R.drawable.staro));
+        drinks.add(new Drink("Grolsh", "Cuijk, Czech Republic", R.drawable.grolsh));
+
+
     }
 
     private void initializeAdapter(){
@@ -52,7 +58,7 @@ public class MainActivity extends Activity {
     }
 
     int quantity = (0);
-    double pintPrice = (1.9);
+    double pintPrice = (2.3);
 
 
     /**

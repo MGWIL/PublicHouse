@@ -32,8 +32,8 @@ public class ReViewAdapter extends RecyclerView.Adapter<ReViewAdapter.DrinkViewH
 
     List<Drink> drinks;
 
-    ReViewAdapter(List<Drink> persons){
-        this.drinks = persons;
+    ReViewAdapter(List<Drink> drinks){
+        this.drinks = drinks;
     }
 
     @Override
@@ -48,11 +48,13 @@ public class ReViewAdapter extends RecyclerView.Adapter<ReViewAdapter.DrinkViewH
         return dvh;
     }
 
+
+
     @Override
-    public void onBindViewHolder(DrinkViewHolder personViewHolder, int i) {
-        personViewHolder.drinkName.setText(drinks.get(i).name);
-        personViewHolder.drinkLocation.setText(drinks.get(i).location);
-        personViewHolder.drinkPhoto.setImageResource(drinks.get(i).photoId);
+    public void onBindViewHolder(DrinkViewHolder drinkViewHolder, int i) {
+        drinkViewHolder.drinkName.setText(drinks.get(i).name);
+        drinkViewHolder.drinkLocation.setText(drinks.get(i).location);
+        drinkViewHolder.drinkPhoto.setImageResource(drinks.get(i).photoId);
     }
 
 
