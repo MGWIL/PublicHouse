@@ -69,10 +69,11 @@
 
         <Button
             style="?android:attr/buttonStyleSmall"
+            android:onClick="aboutDrinks"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:text="@string/information"
-            android:id="@+id/button"
+            android:id="@+id/aboutDrinks"
             android:layout_gravity="center_vertical"/>
 
 

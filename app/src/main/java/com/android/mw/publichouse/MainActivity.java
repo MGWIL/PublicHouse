@@ -1,11 +1,15 @@
 package com.android.mw.publichouse;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -19,13 +23,14 @@ public class MainActivity extends Activity {
     private List<Drink> drinks;
     private RecyclerView rv;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
 
-        rv=(RecyclerView)findViewById(R.id.rv);
+        rv = (RecyclerView) findViewById(R.id.rv);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
@@ -35,7 +40,7 @@ public class MainActivity extends Activity {
         initializeAdapter();
     }
 
-    private void initializeData(){
+    private void initializeData() {
         drinks = new ArrayList<>();
         drinks.add(new Drink("Guiness", "Dublin, Ireland", R.drawable.guinness));
         drinks.add(new Drink("Amstel", "Amsterdam, Netherlands", R.drawable.amstel));
@@ -51,7 +56,7 @@ public class MainActivity extends Activity {
 
     }
 
-    private void initializeAdapter(){
+    private void initializeAdapter() {
         ReViewAdapter adapter = new ReViewAdapter(drinks);
         rv.setAdapter(adapter);
 
@@ -59,6 +64,8 @@ public class MainActivity extends Activity {
 
     int quantity = (0);
     double pintPrice = (2.3);
+
+
 
 
     /**
@@ -78,13 +85,10 @@ public class MainActivity extends Activity {
 
 
     public void decrement(View view) {
-        if (quantity > 0)
-        {
+        if (quantity > 0) {
             quantity = (quantity - 1);
             submitOrder(quantity);
-        }
-        else
-        {
+        } else {
             submitOrder(quantity);
         }
     }
@@ -104,8 +108,7 @@ public class MainActivity extends Activity {
     /*
     changes
      */
-    private void display(int number)
-    {
+    private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
@@ -113,15 +116,21 @@ public class MainActivity extends Activity {
     /**
      * This Method Displayes the Total Cost of Order
      */
-    private void displayPrice(double number)
-    {
+    private void displayPrice(double number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
 
     }
 
 
-}
+    public void aboutDrinks(View v){
+        startActivity(new Intent(MainActivity.this, aboutDrinks.class));
+    }
 
+
+
+
+
+}
 
 
