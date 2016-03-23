@@ -10,4 +10,6 @@
     <string name="information">i</string>
     <string name="title_activity_aboutdrinks">about drinks</string>
     <string name="title_activity_about_drinks">aboutDrinks</string>
+    <string name="UsualOpen">12:00pm</string>
+    <string name="UsualClose">11:00pm</string>
 </resources>
