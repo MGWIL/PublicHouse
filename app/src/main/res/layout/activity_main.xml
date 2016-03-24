@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical|start"
-        >
+        android:weightSum="1">
 
 
         <Button
@@ -48,7 +48,9 @@
             android:layout_height="42dp"
             android:onClick="decrement"
             android:text="@string/minus"
-            android:textColor="#000000" />
+            android:textColor="#ececec"
+            android:background="#424242"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:id="@+id/quantity_text_view"
@@ -64,17 +66,27 @@
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:onClick="increment"
-            android:text="@string/add" />
+            android:text="@string/add"
+            android:background="#424242"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ececec" />
 
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:onClick="aboutDrinks"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
             android:text="@string/information"
             android:id="@+id/aboutDrinks"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:background="#424242"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ececec"
+            android:textStyle="normal"
+            android:textAllCaps="false"/>
 
 
         <TextView
@@ -83,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="167dp"
             android:text="@string/initialPrice"
             android:textColor="@android:color/black"
             android:textSize="16sp" />

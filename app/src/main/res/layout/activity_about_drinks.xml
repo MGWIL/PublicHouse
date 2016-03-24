@@ -23,131 +23,155 @@
             android:layout_margin="5dp"
             android:layout_row="0"
             android:layout_column="0"
-            android:background="@color/colorPrimaryDark"
+            android:background="#424242"
+            android:textAlignment="gravity"
+            android:text="Guniess                £3.50"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Amstel       £2.90 "
+            android:id="@+id/textView"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#424242"
+            android:textColor="#fbfbfb"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Thatchers      £3.10"
+            android:id="@+id/textView8"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="#424242"
             android:textAlignment="center"
-            android:text="Guniess                $2.40"
             android:textColor="#ffffff" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
-            android:id="@+id/textView"
-            android:layout_margin="5dp"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:background="@color/colorPrimaryDark" />
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
-            android:id="@+id/textView8"
-            android:layout_margin="5dp"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:background="@color/colorPrimaryDark" />
-
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Heineken      £3.00"
             android:id="@+id/textView5"
             android:layout_margin="5dp"
             android:layout_row="1"
             android:layout_column="0"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Old Speckled Hen                    £3.60"
             android:id="@+id/textView4"
             android:layout_margin="5dp"
             android:layout_row="1"
             android:layout_column="1"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="21dp" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Doom Bar      £2.30"
             android:id="@+id/textView3"
             android:layout_margin="5dp"
             android:layout_row="1"
             android:layout_column="2"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Stella Artois     £2.50"
             android:id="@+id/textView9"
             android:layout_margin="5dp"
             android:layout_row="2"
             android:layout_column="0"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="MeanTime Pale     £4.00"
             android:id="@+id/textView7"
             android:layout_margin="5dp"
             android:layout_row="2"
             android:layout_column="1"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Staropran     £3.00"
             android:id="@+id/textView6"
             android:layout_margin="5dp"
             android:layout_row="2"
             android:layout_column="2"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Grolsh      £3.10"
             android:id="@+id/textView12"
             android:layout_margin="5dp"
             android:layout_row="3"
             android:layout_column="0"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="San Miguel      £2.50"
             android:id="@+id/textView11"
             android:layout_margin="5dp"
             android:layout_row="3"
             android:layout_column="1"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Doom Bar"
+            android:text="Smirnoff           Ice                      £3.00"
             android:id="@+id/textView10"
             android:layout_margin="5dp"
             android:layout_row="3"
             android:layout_column="2"
-            android:background="@color/colorPrimaryDark" />
+            android:background="#424242"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="wrap_content"

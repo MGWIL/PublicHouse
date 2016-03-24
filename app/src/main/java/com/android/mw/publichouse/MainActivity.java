@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -42,7 +41,7 @@ public class MainActivity extends Activity {
 
     private void initializeData() {
         drinks = new ArrayList<>();
-        drinks.add(new Drink("Guiness", "Dublin, Ireland", R.drawable.guinness));
+        drinks.add(new Drink("Guiness", "Dublin, Ireland", R.drawable.guinness2));
         drinks.add(new Drink("Amstel", "Amsterdam, Netherlands", R.drawable.amstel));
         drinks.add(new Drink("Thatchers", "Somerset, England", R.drawable.cider));
         drinks.add(new Drink("Heineken", "Zoeterwoude, Netherlands", R.drawable.heineken));
@@ -50,9 +49,10 @@ public class MainActivity extends Activity {
         drinks.add(new Drink("Doom Bar", "Cornwall, England", R.drawable.doombar));
         drinks.add(new Drink("Stella Artois", "Leuven, Belgium", R.drawable.stella));
         drinks.add(new Drink("Meantime Pale", "Greenwich, London", R.drawable.meantime));
-        drinks.add(new Drink("staropramen", "Prague, Czech Republic", R.drawable.staro));
+        drinks.add(new Drink("Staropramen", "Prague, Czech Republic", R.drawable.staro));
         drinks.add(new Drink("Grolsh", "Cuijk, Czech Republic", R.drawable.grolsh));
-
+        drinks.add(new Drink("San Miguel", "Madrid, Spain", R.drawable.sanm));
+        drinks.add(new Drink("smirnoff ice", "Moscow, Russia", R.drawable.s_ice));
 
     }
 
@@ -63,7 +63,7 @@ public class MainActivity extends Activity {
     }
 
     int quantity = (0);
-    double pintPrice = (2.3);
+    double pintPrice = (3.2);
 
 
 
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
      */
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText(String.format("%d", number));
     }
 
     /**
